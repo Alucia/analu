@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi portafolio</title>
+    <link type='icon' rel="shortcut icon" href="girl.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link href="css/animate.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){       
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 1020) {
+            $('.scrollup').fadeIn();
+          } else {
+            $('.scrollup').fadeOut();
+          }
+        }); 
+        
+        $('.scrollup').click(function(){
+          $("html, body").animate({ scrollTop: 0 }, 1200);
+          return false;
+        }); 
+      });
+  </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-fixed-top  w-100 ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-star-half-o"></i>Ana Lucia</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#home" class="f-600">Inicio</a></li>
+              <li><a href="#about-me">Sobre mi</a></li>
+              <li><a href="#portfolio" class="f-600">Portafolio</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-image bg-img-block" id="home">
+      <div class="bg-dark">
+        <div class="container-fluid">
+          <div class="row"></div>
+          <div class="phase text-white text-center">
+            <div class="row phase text-center">
+              <h1>Ana Lucia Carhuaz Meneses</h1>
+            </div>
+            <a href="#portfolio" class="btn">Ver Portafolio</a>            
+          </div>          
+          <div class="row text-center">
+            <a href="#about-me">
+              <i class="fa fa-angle-down animated infinite pulse"></i>
+            </a>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about text-center" id="about-me">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Sobre mi</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-push-2">
+            <img src="img/perfil.png" alt="mi avatar">
+          </div>
+          <div class="col-xs-12 col-sm-8 text-center">
+            <p class="description">Soy alumna de Laboratoria Perú e Ingeniera de Sistemas tengo 22 años,con conocimiento en de HTML5, CSS3, Bootstrap, JavaScript. Me encanta el mundo de la tecnología, me encanta programar, me encanta descubrir nuevos retos cada día.</p>
+            <a class="btn" href="https://www.linkedin.com/in/analuciacarhuazmeneses" target="_blank">Ver Cv</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill text-center" id="about-me">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Mis Habilidades Técnicas</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-lg-3 col-sm-6">
+            <img src="img/html.png">
+            <h3>Html</h3>
+          </div>      
+          <div class="col-xs-12 col-lg-3 col-sm-6">
+            <img src="img/css.png">
+            <h3>Css</h3>
+          </div>
+          <div class="col-xs-12 col-lg-3 col-sm-6">
+            <img src="img/js.png">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="col-xs-12 col-lg-3 col-sm-6">
+            <img src="img/bootstrap.png">
+            <h3>Bootstrap</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio text-center" id="portfolio">
+      <div class="row text-center">
+        <h2>Mi Portafolio</h2>
+        <p>Mis trabajos de este año.</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <a href="http://alucia.github.io/flat-theme2/" target="_blank">
+            <div class="item">
+              <div class="item-wrapper">
+                <div  class="wrap">
+                  <div class="wrapper-photo">
+                    <img src="img/portafolio/theme.png" class="img-responsive">
+                  </div>
+                  <div class="shadow-photo"></div>
+                </div>
+                <h3 class="media-heading">Flat-theme</h3>
+              </div>
+            </div>
+          </a> 
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a href="http://alucia.github.io/dashy" target="_blank">
+            <div class="item">
+              <div class="item-wrapper">
+                <div  class="wrap">
+                  <div class="wrapper-photo">
+                    <img src="img/portafolio/dashy.png" class="img-responsive">
+                  </div>
+                  <div class="shadow-photo"></div>
+                </div>
+                <h3 class="media-heading">Dashy</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <a href="http://alucia.github.io/freelancer/" target="blank">
+            <div class="item">
+              <div class="item-wrapper">
+                <div  class="wrap">
+                  <div class="wrapper-photo">
+                    <img src="img/portafolio/freelancer.png" class="img-responsive">
+                  </div>
+                  <div class="shadow-photo"></div>
+                </div>
+                <h3 class="media-heading">Freelancer</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="item">
+            <div class="item-wrapper">
+              <div  class="wrap">
+                <div class="wrapper-photo">
+                  <img src="img/portafolio/primes.png" class="img-responsive">
+                </div>
+                <div class="shadow-photo"></div>
+              </div>
+              <h3 class="media-heading">Primes</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="item">
+            <div class="item-wrapper">
+              <div  class="wrap">
+                <div class="wrapper-photo">
+                  <img src="img/portafolio/edanza.png" class="img-responsive">
+                </div>
+                <div class="shadow-photo"></div>
+              </div>
+              <h3 class="media-heading">Escuela de Danza</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="item">
+            <div class="item-wrapper">
+              <div  class="wrap">
+                <div class="wrapper-photo">
+                  <img src="img/portafolio/ecomunidad.png" class="img-responsive">
+                </div>
+                <div class="shadow-photo"></div>
+              </div>
+              <h3 class="media-heading">E-comunidad</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta text-center text-white">
+      <p>" Yo programo como niña con pasión y alegría "</p>
+      <img src="img/girl-programmer.png" alt="chica programadora">
+    </section>
+    <section class="follow-us text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h2>Mis redes sociales</h2>
+          <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Alucia" target="_blank">
+            <i class="fa fa-git"></i>
+          </a> 
+          <a href="https://twitter.com/AnaCarhuaz" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a> 
+          <a class="hidden-xs" href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="hidden-xs" href="https://plus.google.com" target="_blank">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact"class="contact-us text-white">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <h2>Contácteme</h2>          
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-push-6">
+            <p>Si Ud tiene algún proyecto , le ha interesado mi trabajo y quiere pedir un presupuesto o tiene alguna propuesta laboral.</p>
+            <div class="information">
+              <i class="fa fa-envelope"></i>
+              <h4>analuciacarhuaz@hotmail.com</h4><br>
+              <i class="fa fa-mobile"></i>
+              <h4>990117035 </h4> 
+            </div>        
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+            <form action="" method="post">
+              <label for="nombre"></label>
+              <input id="nombre" type="text"name="nombre" placeholder="Nombre y Apellido" required=""/ >
+              <label for="email"></label>
+              <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+              <label for="mensaje"></label>
+              <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+              <input id="submit" type="submit" name="submit" value="Enviar" />
+            </form> 
+          </div>
+        </div>
+      </div>
+    </section>    
+    <a href="#" class="scrollup"></a>
+    <footer class="text-center">
+      Copyright &copy; 
+      <a href="https://github.com/Alucia" target="_blank">Ana Lucia Carhuaz Meneses</a> Porfolio 2015.
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/smooth-scrolling.js"></script>
+
+    <script type="text/javascript">
+      // Highlight the top nav as scrolling occurs
+      $('body').scrollspy({
+        target: '.navbar-fixed-top'
+      })
+    </script>
+  </body>
+</html>
