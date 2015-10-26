@@ -147,6 +147,7 @@ nav{
 }
 .skill img{
 	width: 30%;
+	margin-bottom: 5%;
 }
 /*portfolio*/
 .portfolio{
@@ -327,18 +328,16 @@ footer a{
 	color: #E07094;
 }
 /*media queries*/
-@media (max-width: 940px) {
-	
+@media (max-width: 940px) {	
 	.phase h1{
 		font-size: 2.5rem;
 		padding-top: 23%;
 	}
 }
-@media (max-width: 768px) {
-	
+@media (max-width: 768px) {	
 	.phase h1{
-		font-size: 2.3rem !important;
-		padding-top: 30% !important;
+		font-size: 1.2em !important;
+		padding-top: 20% !important;
 	}
 	.phase a{
 		font-size: 0.9em !important;
@@ -346,12 +345,12 @@ footer a{
 }
 @media (max-width: 360px) {
 	h2{
-		font-size: 0.5em !important;
+		font-size: 1em !important;
 	}
 	.phase h1{
 		text-align: center;
-		font-size: 1.6em;
-		margin-top: 60%;
+		font-size: 1.6em !important;
+		margin-top: 50%;
 	}
 }
 .scrollup{
