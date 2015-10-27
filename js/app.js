@@ -1,7 +1,7 @@
 $(document).scroll(function () {
     var scroll = $(this).scrollTop();
     if (scroll >= 500) {
-    	$("header nav").css("background-color", "#4D4D4D");/*#FF7D5D*/
+    	$("header nav").css("background-color", "#010A1F");/*#4D4D4D*/
       } else {
        $("header nav").css("background-color", "transparent");
     }

@@ -2,7 +2,7 @@
 body,html{
 	width: 100%;
 	height: 100%;
-	color: #092B4D;
+	color: #092b4d;
 	font-size: 	18px;
 	font-family: 'Alegreya', serif;
 }
@@ -69,30 +69,27 @@ nav{
 	background-size: cover;
 }
 .hero-image i{
-	font-size: 20px;
+	font-size: 45px;
 	color: #fff;
 	margin-top: 7%;
-	padding: 1% 2%;
 	border-radius: 100%;
-	background-color: #D11241;
 }
 .hero-image a i:hover{
 	color: #4D4D4D;
 }
 .phase{
 	margin-top: 15%;
-	padding: 0% 18%;
 	color: #fff;
 }
 .phase h1{
 	font-size: 52px;
+	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 }
 .phase .btn{
 	padding: 1.5%;
 	display: inline-block;
-	/*padding: 15px 1.7%;*/
-	color: #CDD8E0;
+	color: #fff;
 	display: inline-block;
 	font-size: 1.3em;
 	line-height: 1em;
@@ -103,7 +100,6 @@ nav{
 .phase .btn:hover{
 	background-color: #CDD8E0;
 	color: #D9515A; 
-	padding: 1.8% 3%;
 	transition: 0.5s;
 }
 /*about*/
@@ -113,29 +109,71 @@ nav{
 	padding: 5% 0%;
 }
 .about h2,
-.skill h2,
-.follow-us h2{
+.skill h2{
     font-weight: 400;
     font-size: 42px;
     color: #363c46;
-    padding: 4% 0% 6%;
+    padding: 4% 0% 2%;
     font-family: 'Nunito', sans-serif;
 }
-.about img{
-	width: 50%;
+.img-about {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-color: purple;
+	margin: auto;
+}
+.img-about img{
+	width: 100%;
+
+	border-radius: 100%;
 }
 .about .description{
-	padding: 0% 20%;
+	margin-top: 5%;	
 	text-align: justify;
+}
+/*follow us*/
+.follow-us{
+	padding: 7% 0% ;
+}
+.follow-us .icon{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #d9515a;
+	padding: 3% 2%;
+	border-radius: 100%;
+	margin: 0% 2%;
+}
+.follow-us .icon:hover{
+	background-color: #fff
+}
+.follow-us .icon i:hover{
+	color: #d9515a;
+	transition: 2s;
+}
+.follow-us .icon i{
+	font-size: 30px;
+	color: #fff;
+	margin: 0% 15%;
+	display: inline-block;
 }
 /*skill*/
 .skill{
 	background-color: #fff;
 	padding: 5% 0%;
 }
-.skill img{
-	width: 30%;
-	margin-bottom: 5%;
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  font-size: 32px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*portfolio*/
 .portfolio{
@@ -153,14 +191,14 @@ nav{
 .portfolio h3{
 	font-weight: 400;
 	padding-top: 6px;
-	color: #363c46;
+	color: #092b4d;
+	font-family: 'Nunito', sans-serif;
 }
 .portfolio .col-xs-12{
     margin-bottom: 30px;
 }
 .portfolio img{
 	width: 100%;
-	height: 280px;
 }
 .wrapper-photo{
 	overflow: hidden;
@@ -200,46 +238,18 @@ nav{
     display: block;
     opacity: 0;
 }
-.wrap:hover .shadow-photo{
-	opacity: 1;
-	top: 0;    
-}
 /*call to action*/
 .cta{
-	background-color: #E37E9F;	
+	background-color: #d9515a;	
 	background-size: cover;
-	padding-bottom: 3%;
+	padding: 5% 0% 3%;
 	position: relative;
 }
 .cta p{
 	font-weight: 400;
 	font-size: 45px;
-	padding: 5% 24% 3%;
 	color: #fff;
 	font-family: 'Great Vibes', cursive;
-}
-/*follow us*/
-.follow-us{
-	padding: 5% 16% 7%;
-}
-.follow-us p{
-	font-size: 1em;
-	padding: 3% 0 6%;
-	color: #4D4D4D;
-}
-.follow-us a{
-	display: inline-block;
-	padding: 0 0.6%;
-	margin: 0% 5%;
-}
-.follow-us i{
-	font-size: 36px;
-	color: #444444;
-	margin: 0% 10%;
-}
-.follow-us i:hover{
-	color: #E07094;
-	transition: 0.4s;
 }
 /*contact-us*/
 .contact-us .row{
@@ -252,7 +262,7 @@ nav{
 .contact-us i{
 	display: inline-block;
 	font-size: 20px;
-	color: #E07094;
+	color: #d9515a;
 }
 .contact-us h4{
 	display: inline-block;
@@ -263,7 +273,7 @@ nav{
 input, textarea {
 	width:100%;
 	height:48px;
-	border:1px solid #E2E0E0;
+	border: 1px solid #E2E0E0;
 	padding:6px;
 	margin:1% 0%;
 	font-size:1em;
@@ -279,7 +289,7 @@ textarea {
 	border:none;
 	margin:1% 0%;
 	cursor:pointer;
-	background-color: #E07094;
+	background-color: #d9515a;
 	border-radius: 2px;
 }
 #submit:hover,
@@ -324,16 +334,24 @@ footer a{
 }
 @media (max-width: 768px) {	
 	.phase h1{
-		font-size: 1.2em !important;
+		font-size: 1.8em !important;
 		padding-top: 20% !important;
 	}
 	.phase a{
 		font-size: 0.9em !important;
 	}
+	.contact-us p,
+	.contact-us .information{
+		padding: 3% 0%;
+		text-align: center;
+	}
+	.about .description{
+		padding: 0% 5%;
+	}
 }
 @media (max-width: 360px) {
 	h2{
-		font-size: 1em !important;
+		font-size: 1.5em !important;
 	}
 	.phase h1{
 		text-align: center;
