@@ -2,9 +2,9 @@
 body,html{
 	width: 100%;
 	height: 100%;
-	color: #4D4D4D;
+	color: #092B4D;
 	font-size: 	18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Alegreya', serif;
 }
 a{
 	text-decoration: none;
@@ -33,10 +33,6 @@ nav{
 	padding: 7px 5px;
 	margin: 0 15px;
 }
-.active{
-	background-color: #E07094 !important;/*#FF977D*/
-	border-radius: 5px;
-}
 .active li a,
 .navbar-brand{
 	color: 	rgba(255, 255, 255, 0.8) !important;
@@ -45,6 +41,10 @@ nav{
 	color: #ffffff;
 	/*transition:0.3s;*/
 	background-color: transparent;
+}
+.active a{
+	border-bottom: 2px solid #fff;
+	color: #fff !important;
 }
 .navbar-brand:hover{
 	opacity: 0.8;
@@ -69,15 +69,18 @@ nav{
 	background-size: cover;
 }
 .hero-image i{
-	font-size: 45px;
+	font-size: 20px;
 	color: #fff;
-	padding-top: 5%;
+	margin-top: 7%;
+	padding: 1% 2%;
+	border-radius: 100%;
+	background-color: #D11241;
 }
 .hero-image a i:hover{
 	color: #4D4D4D;
 }
 .phase{
-	margin-top: 20%;
+	margin-top: 15%;
 	padding: 0% 18%;
 	color: #fff;
 }
@@ -86,21 +89,22 @@ nav{
 	font-weight: 600;
 }
 .phase .btn{
-	padding:15px 1.7%;
-	color: #fff;
+	padding: 1.5%;
+	display: inline-block;
+	/*padding: 15px 1.7%;*/
+	color: #CDD8E0;
 	display: inline-block;
 	font-size: 1.3em;
 	line-height: 1em;
 	font-weight: 600;
-	margin-bottom: 9%;
-	background-color: #A591C1;
-	border: 2px solid #4D4D4D;
+	margin: 2% 5%;
+	background-color: #D9515A;
 }
 .phase .btn:hover{
-	background-color: #fff;
-	border: 2px solid #4D4D4D;
-	color: #A591C1;
-	transition: 0.8s; 
+	background-color: #CDD8E0;
+	color: #D9515A; 
+	padding: 1.8% 3%;
+	transition: 0.5s;
 }
 /*about*/
 .about,
@@ -115,7 +119,7 @@ nav{
     font-size: 42px;
     color: #363c46;
     padding: 4% 0% 6%;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Nunito', sans-serif;
 }
 .about img{
 	width: 50%;
@@ -123,22 +127,6 @@ nav{
 .about .description{
 	padding: 0% 20%;
 	text-align: justify;
-}
-.about .btn{
-	margin-top: 4%;
-	padding: 1% 5%;
-	background-color: rgba(255, 255, 255, 0.8);
-	color: #E07094;
-	display: inline-block;
-	font-weight: 600;
-	border: 2px solid #4D4D4D;
-	font-size: 18px;
-}
-.about .btn:hover{	
-	background-color: #4D4D4D;
-	border: 2px solid #4D4D4D;
-	color: #E07094;
-	transition: 2s;
 }
 /*skill*/
 .skill{
@@ -160,7 +148,7 @@ nav{
     font-size: 42px;
     padding-bottom: 1%;
     color: #363c46;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Nunito', sans-serif;
 }
 .portfolio h3{
 	font-weight: 400;
