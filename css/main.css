@@ -35,15 +35,16 @@ nav{
 }
 .active li a,
 .navbar-brand{
-	color: 	rgba(255, 255, 255, 0.8) !important;
+	color: #fff !important;
 }
+.nav > li > a:focus,
 .nav>li>a:hover{
 	color: #ffffff;
-	/*transition:0.3s;*/
+	transition:0.3s;
 	background-color: transparent;
 }
 .active a{
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #fff !important;
 	color: #fff !important;
 }
 .navbar-brand:hover{
@@ -113,7 +114,7 @@ nav{
     font-weight: 400;
     font-size: 42px;
     color: #363c46;
-    padding: 4% 0% 2%;
+    padding: 2% 0% 2%;
     font-family: 'Nunito', sans-serif;
 }
 .img-about {
@@ -144,13 +145,11 @@ nav{
 	padding: 3% 2%;
 	border-radius: 100%;
 	margin: 0% 2%;
-}
-.follow-us .icon:hover{
-	background-color: #fff
+	color: #fff;
 }
 .follow-us .icon i:hover{
-	color: #d9515a;
-	transition: 2s;
+	color: #092b4d;
+	transition: 1s;
 }
 .follow-us .icon i{
 	font-size: 30px;
@@ -184,7 +183,7 @@ nav{
 .contact-us h2{
     font-weight: 400;
     font-size: 42px;
-    padding-bottom: 1%;
+    padding: 2% 0% 2%;
     color: #363c46;
     font-family: 'Nunito', sans-serif;
 }
@@ -348,6 +347,9 @@ footer a{
 	.about .description{
 		padding: 0% 5%;
 	}
+	.cta p{
+		font-size: 32px;
+	}
 }
 @media (max-width: 360px) {
 	h2{
@@ -358,16 +360,7 @@ footer a{
 		font-size: 1.6em !important;
 		margin-top: 50%;
 	}
-}
-.scrollup{
-    width:65px;
-    height:40px;
-    opacity:0.9;
-    position:fixed;
-    bottom:3%;
-    right:4%;
-    display:none;
-    text-indent:-9999px;
-    background: url("../img/up.png") no-repeat;
-    background-size: cover;
+	.cta p{
+		font-size: 22px;
+	}
 }

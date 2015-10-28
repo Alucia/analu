@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Mi portafolio</title>
     <link type='icon' rel="shortcut icon" href="girl.ico">
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
@@ -14,33 +17,38 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css"> 
     <link href="css/animate.css" rel="stylesheet"> 
-    
-  </script>
+  
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-fixed-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">  
+  <nav class="navbar navbar-fixed-top navbar-right" role="navigation">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-star-half-o"></i>Ana Lucia</a>
+            <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-star-half-o"></i>Ana Lucia</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#home" class="f-600">Inicio</a></li>
-              <li><a href="#about-me">Sobre mi</a></li>
-              <li><a href="#portfolio" class="f-600">Portafolio</a></li>
-              <li><a href="#contact">Contacto</a></li>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">     
+              <li>
+                <a class="page-scroll" href="#home">Inicio</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#about-me">Sobre mi</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#portfolio" class="f-600">Portafolio</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#contact">Contacto</a>
+              </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+    </nav>   
     <section class="hero-image bg-img-block" id="home">
       <div class="bg-dark">
         <div class="container-fluid">
@@ -49,11 +57,11 @@
             <div class="row phase text-center">
               <h1>Ana Lucia <br> Carhuaz Meneses</h1>
             </div>
-            <a href="#portfolio" class="btn"> Ver Portafolio </a>            
+            <a class="btn page-scroll" href="#portfolio" > Ver Portafolio </a>
           </div>          
           <div class="row text-center">
-            <a href="#about-me">
-              <i class="fa fa-angle-down"></i>
+            <a class="page-scroll" href="#about-me">
+              <i class="fa fa-angle-down animated infinite bounce"></i>
             </a>          
           </div>
         </div>
@@ -87,12 +95,12 @@
                   <i class="fa fa-twitter"></i>
                 </a> 
                  </div>
-                <div class="icon hidden-xs">
+                <div class="icon visible-lg">
                   <a href="https://www.facebook.com" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
                 </div>
-                <div class="icon hidden-xs">
+                <div class="icon hidden-lg">
                   <a href="https://plus.google.com" target="_blank">
                   <i class="fa fa-google-plus"></i>
                 </a> 
@@ -109,19 +117,19 @@
           <h2>Mis Habilidades Técnicas</h2>
         </div>
         <div class="row text-center">
-          <div class="col-xs-12 col-sm-3">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="chart" data-percent="90%">90%</div>
             <p>Html, Css</p>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="chart" data-percent="70">70%</div>
             <p>Bootstrap, Git, Saas</p>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="chart" data-percent="40">40%</div>
             <p>JavaScript, Jquery</p>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="col-xs-12 col-sm-6 col-lg-3">
             <div class="chart" data-percent="45">45%</div>
             <p>Wordpress</p>
           </div>          
@@ -239,7 +247,6 @@
           </div>
         </div>
       </div>
-
     </section>
     <section id="contact"class="contact-us text-white">
       <div class="container-fluid">
@@ -277,35 +284,10 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    
     <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
     <script src="js/easypiechart.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    
-    <script type="text/javascript">
-      // Highlight the top nav as scrolling occurs
-      $('body').scrollspy({
-        target: '.navbar-fixed-top'
-      })
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function(){       
-        $(window).scroll(function(){
-          if ($(this).scrollTop() > 5000) {
-            $('.scrollup').fadeIn();
-          } else {
-            $('.scrollup').fadeOut();
-          }
-        }); 
-        
-        $('.scrollup').click(function(){
-          $("html, body").animate({ scrollTop: 0 }, 1200);
-          return false;
-        });
- 
-      });
-  </script>
   </body>
 </html>
