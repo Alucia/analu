@@ -163,17 +163,28 @@ nav{
 	padding: 5% 0%;
 }
 .chart {
-  position: relative;
   display: inline-block;
-  margin: 20px 10px;
-  font-size: 32px;
-  text-align: center;
+  width: 95px;
+  height: 95px;
+  margin: 15px 10px 5px;
+  vertical-align: top;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 22px;
+}
+.chart span {
+  display: block;
+  font-size: 2em;
+  font-weight: normal;
 }
 .chart canvas {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
 }
+
 /*portfolio*/
 .portfolio{
 	background-color: #f4f4f4;
