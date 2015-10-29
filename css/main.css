@@ -104,8 +104,7 @@ nav{
 	transition: 0.5s;
 }
 /*about*/
-.about,
-.contact-us{	
+.about{	
 	background-color: #f4f4f4;
 	padding: 5% 0%;
 }
@@ -190,8 +189,7 @@ nav{
 	background-color: #f4f4f4;
 	padding: 5% 9% 0%;
 }
-.portfolio h2,
-.contact-us h2{
+.portfolio h2{
     font-weight: 400;
     font-size: 42px;
     padding: 2% 0% 2%;
@@ -262,6 +260,16 @@ nav{
 	font-family: 'Great Vibes', cursive;
 }
 /*contact-us*/
+.contact-us {
+	background-color: #dcd9d6;
+	padding: 5% 0%;
+}
+.contact-us h2{
+    font-weight: 400;
+    font-size: 42px;
+    padding: 2% 0% 2%;
+    font-family: 'Nunito', sans-serif;
+}
 .contact-us .row{
 	padding: 0% 10%;
 }
@@ -283,17 +291,21 @@ nav{
 input, textarea {
 	width:100%;
 	height:48px;
-	border: 1px solid #E2E0E0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding:6px;
 	margin:1% 0%;
 	font-size:1em;
 	color:black;
+	background-color: transparent;
+}
+.send {
+	font-size: 1.3em;
 }
 textarea {
 	height:126px;	
 }
 #submit{
-	color: white;
+	color: #fff;
 	width:100%;
 	height:48px;
 	border:none;
@@ -305,8 +317,8 @@ textarea {
 #submit:hover,
 .about-me .btn:hover{
 	background-color: #fff;
-	color: #EF7674;
-	border: 2px solid #EF7674;
+	color: #092b4d;
+	transition: 1s;
 }
 #nombre,
 #email,
