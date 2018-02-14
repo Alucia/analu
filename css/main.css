@@ -134,7 +134,9 @@ nav{
 }
 /*follow us*/
 .follow-us{
-	padding: 7% 0% ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .follow-us .icon{
 	display: inline-block;
@@ -143,7 +145,6 @@ nav{
 	background-color: #d9515a;
 	padding: 3% 2%;
 	border-radius: 100%;
-	margin: 0% 2%;
 	color: #fff;
 }
 .follow-us .icon i:hover{
@@ -153,8 +154,7 @@ nav{
 .follow-us .icon i{
 	font-size: 30px;
 	color: #fff;
-	margin: 0% 15%;
-	display: inline-block;
+	margin-top: 17%;
 }
 /*skill*/
 .skill{
@@ -273,9 +273,8 @@ nav{
 .contact-us .row{
 	padding: 0% 10%;
 }
-.contact-us p,
-.contact-us .information{
-	padding: 7% 15%;
+.contact-us p{
+	padding: 8px 0%;
 }
 .contact-us i{
 	display: inline-block;
@@ -287,6 +286,9 @@ nav{
 	font-size: 0.9em;
 	font-weight: 300;
 	padding: 1% 2% 2%;
+}
+.contact-us .img-contactus{
+	border-radius: 100%;
 }
 input, textarea {
 	width:100%;
